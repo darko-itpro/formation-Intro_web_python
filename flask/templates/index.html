@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue — Formation Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main>
+        <h1>Bienvenue dans la formation Flask</h1>
+        <nav>
+            <a href="{{ url_for('blog_index') }}">Voir les articles →</a>
+            &nbsp;·&nbsp;
+            <a href="{{ url_for('about') }}">En savoir plus →</a>
+        </nav>
+        <br />
+        <p>
+            Cette application illustre les concepts fondamentaux de Flask :
+            routing, templates Jinja2, et fichiers statiques.
+        </p>
+        <p>
+            Flask est un micro-framework web Python — léger, flexible,
+            et idéal pour apprendre les bases du développement web côté serveur.
+        </p>
+    </main>
+</body>
+</html>

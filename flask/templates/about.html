@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos — Formation Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main>
+        <h1>À propos</h1>
+        <p>
+            Ce projet fait partie de la formation <em>Introduction au web avec Python</em>.
+            Il couvre les bases du développement web en Python à travers deux frameworks :
+            Flask et Django.
+        </p>
+        <p>
+            Le répertoire <code>flask/</code> contient cette application minimale.
+            Elle démontre comment créer des routes, rendre des templates Jinja2,
+            et servir des fichiers statiques.
+        </p>
+        <nav>
+            <a href="{{ url_for('index') }}">← Retour à l'accueil</a>
+        </nav>
+    </main>
+</body>
+</html>
